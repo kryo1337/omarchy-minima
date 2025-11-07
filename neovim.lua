@@ -10,6 +10,80 @@ return {
 			float = {
 				transparent = true,
 			},
+
+			custom_highlights = function(colors)
+				return {
+					-- Cursor and line numbers
+					LineNr = { fg = colors.mauve },
+					CursorLineNr = { fg = colors.mauve, style = { "bold" } },
+
+					-- Syntax highlighting
+					Keyword = { fg = colors.mauve },
+					Function = { fg = colors.mauve },
+					Type = { fg = colors.mauve },
+					["@function"] = { fg = colors.mauve },
+					["@keyword"] = { fg = colors.mauve },
+					["@type"] = { fg = colors.mauve },
+
+					-- Directories and folders
+					Directory = { fg = colors.mauve },
+
+					-- Search
+					Search = { bg = colors.surface1, fg = colors.mauve },
+					IncSearch = { bg = colors.mauve, fg = colors.base },
+
+					-- Visual selection
+					Visual = { bg = colors.surface1, style = { "bold" } },
+
+					-- LSP
+					LspReferenceText = { bg = colors.surface1 },
+					LspReferenceRead = { bg = colors.surface1 },
+					LspReferenceWrite = { bg = colors.surface1 },
+
+					-- Telescope
+					TelescopeSelectionCaret = { fg = colors.mauve },
+					TelescopeSelection = { fg = colors.mauve, bg = colors.surface0, style = { "bold" } },
+					TelescopePromptPrefix = { fg = colors.mauve },
+					TelescopeBorder = { fg = colors.mauve },
+
+					-- Neo-tree
+					NeoTreeDirectoryIcon = { fg = colors.mauve },
+					NeoTreeDirectoryName = { fg = colors.mauve },
+
+					-- Git signs
+					GitSignsAdd = { fg = colors.green },
+					GitSignsChange = { fg = colors.mauve },
+					GitSignsDelete = { fg = colors.red },
+
+					-- Indent guides
+					IndentBlanklineChar = { fg = colors.surface0 },
+					IndentBlanklineContextChar = { fg = colors.mauve },
+
+					-- Statusline components
+					StatusLine = { bg = colors.mantle },
+
+					-- Tabs
+					TabLine = { bg = colors.mantle },
+					TabLineSel = { fg = colors.mauve, bg = colors.base, style = { "bold" } },
+				}
+			end,
+
+			integrations = {
+				cmp = true,
+				gitsigns = true,
+				nvimtree = true,
+				neotree = true,
+				treesitter = true,
+				notify = true,
+				mini = {
+					enabled = true,
+					indentscope_color = "mauve",
+				},
+				telescope = {
+					enabled = true,
+				},
+				which_key = true,
+			},
 		},
 	},
 	{
