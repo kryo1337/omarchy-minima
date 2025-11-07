@@ -21,4 +21,4 @@ or
 
 # Credits
 
-This theme is inspired by the [Catppuccin](https://github.com/catppuccin) project and [Luquatic](https://github.com/Luquatic/omarchy-catppuccin-dark) for wallpapers and some inspiraton.
+This theme is inspired by the [Catppuccin](https://github.com/catppuccin) project. Also thanks to [Luquatic](https://github.com/Luquatic/omarchy-catppuccin-dark) for wallpapers and some inspiraton.
