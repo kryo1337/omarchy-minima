@@ -11,8 +11,26 @@ return {
 				transparent = true,
 			},
 
+			color_overrides = {
+				mocha = {
+					blue = "#c6a0f6",
+				},
+			},
+
 			custom_highlights = function(colors)
 				return {
+					-- Dashboard/Alpha (LazyVim startup screen)
+					AlphaHeader = { fg = colors.mauve },
+					AlphaButtons = { fg = colors.mauve },
+					AlphaShortcut = { fg = colors.mauve },
+					AlphaFooter = { fg = colors.mauve },
+
+					-- Dashboard specific
+					DashboardHeader = { fg = colors.mauve },
+					DashboardCenter = { fg = colors.mauve },
+					DashboardShortCut = { fg = colors.mauve },
+					DashboardFooter = { fg = colors.mauve },
+
 					-- Cursor and line numbers
 					LineNr = { fg = colors.mauve },
 					CursorLineNr = { fg = colors.mauve, style = { "bold" } },
@@ -65,6 +83,10 @@ return {
 					-- Tabs
 					TabLine = { bg = colors.mantle },
 					TabLineSel = { fg = colors.mauve, bg = colors.base, style = { "bold" } },
+
+					-- Noice (command line)
+					NoiceCmdlineIcon = { fg = colors.mauve },
+					NoiceCmdlinePopupBorder = { fg = colors.mauve },
 				}
 			end,
 
@@ -83,6 +105,8 @@ return {
 					enabled = true,
 				},
 				which_key = true,
+				alpha = true,
+				dashboard = true,
 			},
 		},
 	},
