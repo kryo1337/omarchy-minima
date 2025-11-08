@@ -1,4 +1,24 @@
 {
   "name": "Catppuccin Mocha",
-  "extension": "catppuccin.catppuccin-vsc"
+  "extension": "catppuccin.catppuccin-vsc",
+  "settings": {
+    "workbench.colorCustomizations": {
+      "[Catppuccin Mocha]": {
+        "focusBorder": "#cba6f7",
+        "button.background": "#cba6f7",
+        "button.hoverBackground": "#b4a1e8",
+        "textLink.foreground": "#cba6f7",
+        "textLink.activeForeground": "#b4a1e8",
+        "editorCursor.foreground": "#cba6f7",
+        "terminalCursor.foreground": "#cba6f7",
+        "editorLineNumber.activeForeground": "#cba6f7",
+        "list.highlightForeground": "#cba6f7",
+        "progressBar.background": "#cba6f7",
+        "editorWidget.border": "#cba6f7",
+        "pickerGroup.foreground": "#cba6f7",
+        "tab.activeBorder": "#cba6f7",
+        "notificationLink.foreground": "#cba6f7"
+      }
+    }
+  }
 }
